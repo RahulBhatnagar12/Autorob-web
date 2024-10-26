@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url("autorob.jpeg");
+  
+   background-size:cover;
+   width:100vw;
+   height:100vh;
+   opacity:0.8;
+
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0a0a23;
+    color: #fff;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffab;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00ffab;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00ffab;
+    transition: width 0.3s;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 50;
+    left: 0;
+    height: 60%;
+    width: 200px;
+    background-color:transparent;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #00ffab;
+    color: #0a0a23;
+    border-radius: 5px;
+  }
+  
+  .content {
+    margin-left: 220px; /* Adjust based on sidebar width */
+    padding: 1rem;
+  }
+  
+  /* CSS */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  
